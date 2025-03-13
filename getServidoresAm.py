@@ -43,7 +43,7 @@ with tqdm(range(1, 601), desc="Baixando arquivos", unit="arquivo", leave=False) 
                     file.write(chunk)
 
         except requests.exceptions.RequestException as e:
-            tqdm.write(f"❌ Erro ao baixar {url}: {e}")
+            tqdm.write(f"❌ Erro ao baixar ou Base  Não disponível em {url}: {e}")
 
 print("✅ Todos os downloads foram concluídos!")
 
